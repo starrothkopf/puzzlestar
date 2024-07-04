@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #333;
+}
+
+body {
+  text-align: center;
+  font-size: 1em;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* navbar */
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.navbar h1 {
+  font-weight: 500;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Aligns items at the top */
+  margin: 20px;
+}
+/* rows */
+.row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.row > div {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #333;
+  margin: 2px;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2.1em;
+}
+.row > div.green {
+  --background: #5c9f72;
+  --border-color: #5c9f72;
+  animation: flip 0.7s ease forwards;
+}
+.row > div.grey {
+  --background: #333;
+  --border-color: #333;
+  animation: flip 0.7s ease forwards;
+}
+.row > div.yellow {
+  --background: #cfb954;
+  --border-color: #cfb954;
+  animation: flip 0.7s ease forwards;
+}
+.row > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.row > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.row > div:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.row > div:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.row.current > div.filled {
+  animation: bounce 0.15s ease-in-out forwards;
+}
+.keypad {
+  max-width: 500px;
+}
+.keypad > div {
+
+  width: 40px;
+  height: 50px;
+  font-size: 0.9em;
+  display: inline-block;
+  border-radius: 4px;
+  line-height: 50px;
+}
+.keypad > div.green {
+  background: #5c9f72;
+  color: #fff;
+  transition: all 0.05s ease-in 1.2s;
+}
+.keypad > div.yellow {
+  background: #cfb954;
+  color: #fff;
+  transition: all 0.05s ease-in 1.2s;
+}
+.keypad > div.grey {
+  background: #333;
+  color: #fff;
+  transition: all 0.05s ease-in 1.2s;
+}
+.modal {
+  background: rgba(255,255,255,0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.modal div {
+  max-width: 480px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 10% auto;
+  box-shadow: 2px 20px 20px rgba(0,0,0,0.1);
+}
+.modal .solution {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* animations */
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+    background: #fff;
+    border-color: #eee;
+    color: #333;
+  }
+  45% {
+    transform: rotateX(90deg);
+    background: #fff;
+    border-color: #eee;
+    color: #333;
+  }
+  55% {
+    transform: rotateX(90deg);
+    background: var(--background);
+    border-color: var(--border-color);
+    color: white;
+  }
+  100% {
+    transform: rotateX(0);
+    background: var(--background);
+    border-color: var(--border-color);
+    color: white;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+    border-color: rgb(210, 210, 210);
+  }
+  50% {
+    transform: scale(1.1);
+    border-color: #333;
+  }
+  100% {
+    transform: scale(1);
+    border-color: #333;
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "solutions":[
+        {"word": "bowie", "id":1},
+        {"word": "aphex", "id":2},
+        {"word": "react", "id":1},
+        {"word": "zelda", "id":1},
+        {"word": "prose", "id":1},
+        {"word": "alien", "id":1},
+        {"word": "human", "id":1},
+        {"word": "color", "id":1}
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "letters": [
+        {"key": "a"},
+        {"key": "b"},
+        {"key": "c"},
+        {"key": "d"},
+        {"key": "e"},
+        {"key": "f"},
+        {"key": "g"},
+        {"key": "h"},
+        {"key": "i"},
+        {"key": "j"},
+        {"key": "k"},
+        {"key": "l"},
+        {"key": "m"},
+        {"key": "n"},
+        {"key": "o"},
+        {"key": "p"},
+        {"key": "q"},
+        {"key": "r"},
+        {"key": "s"},
+        {"key": "t"},
+        {"key": "u"},
+        {"key": "v"},
+        {"key": "w"},
+        {"key": "x"},
+        {"key": "y"},
+        {"key": "z"}
+      ],
+    "solutions":[
+        {"word": "bowie", "id":1},
+        {"word": "aphex", "id":2},
+        {"word": "react", "id":3},
+        {"word": "zelda", "id":4},
+        {"word": "prose", "id":5},
+        {"word": "alien", "id":6},
+        {"word": "human", "id":7},
+        {"word": "color", "id":8}
+    ]
+}

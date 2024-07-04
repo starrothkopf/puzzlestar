@@ -1,0 +1,14 @@
+const useWordle = (solution) => {
+
+    // format a guess into an array of letter objects
+    const formatGuess = () => {
+
+    }
+    // add new guess to the guesses state
+    const addNewGuess = () => {
+
+    }
+
+}
+
+export default useWordle

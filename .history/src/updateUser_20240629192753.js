@@ -1,0 +1,1 @@
+{solution && <Wordle solution={solution}/>}
