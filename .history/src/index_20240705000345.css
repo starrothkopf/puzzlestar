@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #333;
+}
+
+body {
+  text-align: center;
+  font-size: 1em;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* navbar */
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.navbar h1 {
+  font-weight: 500;
+}
+.navbar > span {
+  color: #333;
+  font-size: 1.5em;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* home */
+.animation-container {
+  
+}
+.container{
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+}
+.square{
+  height: 94%;
+  width: 94%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -47% 0 0 -47%;
+}
+.black{ 
+  background: black;  
+  animation: rotate 10s infinite linear; 
+}
+@keyframes rotate{
+  0%{ transform: rotate(0deg); }
+	100%{ transform: rotate(360deg); }	
+}
+
+/* signup */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.top-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Center horizontally */
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.top-panel h1 {
+  font-size: 200px;
+  font-weight: 500;
+}
+
+.top-panel signup-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.top-panel form input {
+  padding: 10px 20px;
+  width: 150px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 20px;
+  margin: 0px 5px;
+  transition: width 0.5s ease;
+}
+.top-panel input:focus{
+  outline: none;
+  width: 250px;
+}
+.bottom-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+}
+.bottom-panel button {
+  display: flex;
+  font-size: 15px;
+  cursor: pointer;
+}
+.signup {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 40px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+}
+.login {
+  margin-top: 100px;
+  background-color: #333;
+  color: #666;
+  border: none;
+}
+.login:hover {
+  text-decoration: underline;
+}
+.bottom-panel p {
+  margin-top: 10px;
+  color: #bbb;
+  font-size: 15px;
+}
+
+/* login */
+.login-container {
+  margin: 120px auto; /* Centering the container horizontally */
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-container form input {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  width: 150px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  margin: 5px 0px;
+  transition: width 0.5s ease;
+}
+.login-container input:focus{
+  width: 250px;
+  outline: none;
+}
+.login-container button {
+  cursor: pointer;
+}
+.tohome{
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border-radius: 40px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+}
+.tosignup{
+  margin-top: 63px;
+  padding: 0px;
+  background-color: white;
+  font-size: 15px;
+  color: #999;
+  border: none;
+}
+.tosignup:hover {
+  text-decoration: underline;
+}
+
+/* account */
+.account{
+  margin: 140px auto; /* Centering the container horizontally */
+  width: 500px;
+}
+.account-stats{
+  display: flex;
+  margin: 20px;
+  margin-top: 30px;
+  margin-left: 38px;
+  flex-direction: column;
+}
+
+.account-stats button {
+  font-size: 15px;
+  background-color: #fff;
+  margin: none;
+  border: none;
+}
+.account-stats button:hover {
+  text-decoration: underline;
+}
+.account-input {
+  border: none;
+  font-size: 15px;
+}
+.account-input:focus {
+  outline: none;
+}
+.logout {
+  padding: 10px 20px;
+  margin: 30px 0px;
+  border-radius: 40px;
+  background-color: white;
+  color: #333;
+  width: 90px;
+  border: 1px solid #333;
+  transition: width 0.5s ease;
+}
+.logout:hover {
+  width: 130px;
+}
+.delete {
+  padding: 10px 20px;
+  margin: 30px 5px;
+  border-radius: 40px;
+  background-color: white;
+  color: #333;
+  width: 150px;
+  border: 1px solid #333;
+  transition: width 0.5s ease;
+}
+.delete:hover {
+  width: 180px;
+}
+
+/* wordle */
+.wordle-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+  gap: 20px;
+}
+.right-wordle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 90px;
+}
+/* rows */
+.row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.row > div {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #333;
+  margin: 2px;
+  text-align: center;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 3.5em;
+}
+.row > div.green {
+  --background: #5c9f72;
+  --border-color: #5c9f72;
+  animation: flip 0.7s ease forwards;
+}
+.row > div.grey {
+  --background: #333;
+  --border-color: #333;
+  animation: flip 0.7s ease forwards;
+}
+.row > div.yellow {
+  --background: #cfb954;
+  --border-color: #cfb954;
+  animation: flip 0.7s ease forwards;
+}
+.row > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.row > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.row > div:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.row > div:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.row.current > div.filled {
+  animation: bounce 0.15s ease-in-out forwards;
+}
+.keypad {
+  max-width: 460px;
+}
+.keypad > div {
+  margin: 2px;
+  width: 40px;
+  height: 50px;
+  font-size: 1.3em;
+  display: inline-block;
+  border-radius: 20px;
+  line-height: 50px;
+}
+.keypad > div.green {
+  background: #5c9f72;
+  color: #fff;
+  transition: all 0.05s ease-in 1.2s;
+}
+.keypad > div.yellow {
+  background: #cfb954;
+  color: #fff;
+  transition: all 0.05s ease-in 1.2s;
+}
+.keypad > div.grey {
+  background: #333;
+  color: #fff;
+  transition: all 0.05s ease-in 1.2s;
+}
+.stats {
+  min-width: 450px;
+  text-align: left;
+}
+.stats h2 {
+  font-weight: 500;
+  font-size: 50px;
+  border-bottom: 1px solid #333;
+}
+
+.stat-line {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+}
+
+.bars > div {
+  background: #333;
+  color: #fff;
+}
+
+.bar {
+  margin: 1px;
+  padding: 1px;
+  padding-left: 3px;
+  background: #333;
+  color: #fff;
+}
+
+.modal {
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+  display: flex;
+}
+.modal div {
+  background: #fff;
+  height: 490px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  overflow: hidden;
+  animation: slide-in 0.2s ease-in forwards;
+}
+
+/* animations */
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+    background: #fff;
+    border-color: #eee;
+    color: #333;
+  }
+  45% {
+    transform: rotateX(90deg);
+    background: #fff;
+    border-color: #eee;
+    color: #333;
+  }
+  55% {
+    transform: rotateX(90deg);
+    background: var(--background);
+    border-color: var(--border-color);
+    color: white;
+  }
+  100% {
+    transform: rotateX(0);
+    background: var(--background);
+    border-color: var(--border-color);
+    color: white;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+    border-color: rgb(210, 210, 210);
+  }
+  50% {
+    transform: scale(1.1);
+    border-color: #333;
+  }
+  100% {
+    transform: scale(1);
+    border-color: #333;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 490px;
+  }
+}
