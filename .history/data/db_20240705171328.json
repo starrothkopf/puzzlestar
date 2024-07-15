@@ -1,0 +1,144 @@
+{
+  "solutions": [
+    {
+      "word": "react",
+      "id": "1"
+    },
+    {
+      "word": "bowie",
+      "id": "2"
+    },
+    {
+      "word": "aphex",
+      "id": "3"
+    },
+    {
+      "word": "stars",
+      "id": "4"
+    }
+  ],
+  "letters": [
+    {
+      "key": "q",
+      "id": "97b8"
+    },
+    {
+      "key": "w",
+      "id": "5cb1"
+    },
+    {
+      "key": "e",
+      "id": "0f34"
+    },
+    {
+      "key": "r",
+      "id": "38bc"
+    },
+    {
+      "key": "t",
+      "id": "44e3"
+    },
+    {
+      "key": "y",
+      "id": "d26c"
+    },
+    {
+      "key": "u",
+      "id": "99d3"
+    },
+    {
+      "key": "i",
+      "id": "641f"
+    },
+    {
+      "key": "o",
+      "id": "4045"
+    },
+    {
+      "key": "p",
+      "id": "0f63"
+    },
+    {
+      "key": "a",
+      "id": "b8f4"
+    },
+    {
+      "key": "s",
+      "id": "532b"
+    },
+    {
+      "key": "d",
+      "id": "473b"
+    },
+    {
+      "key": "f",
+      "id": "a0df"
+    },
+    {
+      "key": "g",
+      "id": "7530"
+    },
+    {
+      "key": "h",
+      "id": "9518"
+    },
+    {
+      "key": "j",
+      "id": "0a2d"
+    },
+    {
+      "key": "k",
+      "id": "f6f2"
+    },
+    {
+      "key": "l",
+      "id": "04b1"
+    },
+    {
+      "key": "z",
+      "id": "d652"
+    },
+    {
+      "key": "x",
+      "id": "9353"
+    },
+    {
+      "key": "c",
+      "id": "407d"
+    },
+    {
+      "key": "v",
+      "id": "3cec"
+    },
+    {
+      "key": "b",
+      "id": "c592"
+    },
+    {
+      "key": "n",
+      "id": "8426"
+    },
+    {
+      "key": "m",
+      "id": "507a"
+    }
+  ],
+  "users": [
+    {
+      "id": "3dce",
+      "username": "stark0pf",
+      "hashed_password": "12345",
+      "email": "rothkopfstar@gmail.com",
+      "salt": "",
+      "num_played": 0,
+      "num_wins": 0,
+      "won_in_1": 0,
+      "won_in_2": 0,
+      "won_in_3": 0,
+      "won_in_4": 0,
+      "won_in_5": 0,
+      "won_in_6": 0
+    }
+  ]
+}
+

@@ -125,19 +125,61 @@
   ],
   "users": [
     {
-      "id": "1",
+      "id": "8dab",
       "username": "stark0pf",
-      "email": "r.star@wustl.edu",
       "hashed_password": "12345",
+      "email": "rothkopfstar@gmail.com",
       "salt": "",
-      "num_played": 177,
-      "win_percentage": 98,
-      "won_in_1": 0,
-      "won_in_2": 13,
-      "won_in_3": 47,
-      "won_in_4": 69,
-      "won_in_5": 33,
-      "won_in_6": 12
+      "wordle_lastPlayDate": "1721065068063",
+      "wordle_plays": 189,
+      "wordle_wins": 185,
+      "wordle_guesses": {
+        "1": 0,
+        "2": 13,
+        "3": 49,
+        "4": 76,
+        "5": 35,
+        "6": 12
+      },
+      "constellations_lastPlayDate": 0,
+      "constellations_plays": 0,
+      "constellations_wins": 0,
+      "constellations_misses": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "starcrossed_lastPlayDate": 0,
+      "wordle_guesses.2": 14
+    },
+    {
+      "id": "eef1",
+      "username": "test",
+      "hashed_password": "test",
+      "email": "test",
+      "salt": "",
+      "wordle_lastPlayDate": "1721058435441",
+      "wordle_plays": 2,
+      "wordle_wins": 2,
+      "wordle_guesses": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "constellations_lastPlayDate": 0,
+      "constellations_plays": 0,
+      "constellations_wins": 0,
+      "constellations_misses": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "starcrossed_lastPlayDate": 0,
+      "wordle_guesses.2": 1,
+      "wordle_guesses.3": 1
     }
   ]
 }
