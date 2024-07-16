@@ -1,0 +1,27 @@
+import React, { useContext, useState } from 'react'
+import { AuthContext } from '../hooks/AuthContext';
+
+export default function StatTransfer({closeModal}) {
+    const { currentUser } = useContext(AuthContext);
+    const [numPlayed, setNumPlayed] = useState('');
+
+    const handleTransfer = () => {
+        // Logic for transferring stats
+       closeModal();
+    };
+
+    return (
+        <div className="modal-overlay">
+            <div className="modal-content">
+            <p>We're going honor-system manual-style—you can only do this once.</p>
+            <form className="transfer-form" id="stattransfer-form">
+            <p>Username:</p>
+                <input className="transfer-form-input" type="number" placeholder="# of Games Played" value={numPlayed} onChange={(e) => setNumPlayed(e.target.value)} />
+            </form>
+            <button className="submit" form="stattransfer-form" type="submit" onClick={handleTransfer}>Submit</button>
+            <button className="submit" onClick={() => closeModal()}>Cancel</button>
+            </div>
+        </div>
+    )
+}
+

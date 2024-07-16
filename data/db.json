@@ -125,20 +125,53 @@
   ],
   "users": [
     {
-      "id": "8dab",
+      "id": "1a27",
       "username": "stark0pf",
-      "hashed_password": "12345",
-      "email": "rothkopfstar@gmail.com",
-      "salt": "",
-      "wordle_lastPlayDate": "1721065068063",
-      "wordle_plays": 189,
-      "wordle_wins": 185,
+      "hashed_password": "$2a$10$IH/FPgOKyUhakaVXpCLWYud405QFnwR6rwLJ9AUdCcxQeuaswI3c.",
+      "salt": "$2a$10$IH/FPgOKyUhakaVXpCLWYu",
+      "email": "stark0pf",
+      "wordle_lastPlayDate": "1721109369371",
+      "wordle_lastPlayGuesses": 2,
+      "wordle_lastPlayWin": true,
+      "wordle_plays": "",
+      "wordle_wins": 0,
+      "wordle_guesses": {
+        "1": 0,
+        "2": 14,
+        "3": 50,
+        "4": 76,
+        "5": 35,
+        "6": ""
+      },
+      "constellations_lastPlayDate": 0,
+      "constellations_plays": 0,
+      "constellations_wins": 0,
+      "constellations_misses": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "starcrossed_lastPlayDate": 0,
+      "starcrossed_lastPlaySpeed": 0,
+      "statTransfer": true
+    },
+    {
+      "id": "fdd3",
+      "username": "r",
+      "hashed_password": "$2a$10$U1cXicj4ZhzTo4L2IgE7lO.49mJu9ua2Gxoh4IR8vYw3ohsFz6vEO",
+      "email": "r",
+      "statTransfer": true,
+      "wordle_lastPlayDate": "1721168890928",
+      "wordle_lastPlayGuesses": 2,
+      "wordle_lastPlayWin": true,
+      "wordle_plays": 178,
+      "wordle_wins": 174,
       "wordle_guesses": {
         "1": 0,
         "2": 13,
-        "3": 49,
-        "4": 76,
-        "5": 35,
+        "3": 48,
+        "4": 69,
+        "5": 33,
         "6": 12
       },
       "constellations_lastPlayDate": 0,
@@ -150,36 +183,7 @@
         "3": 0
       },
       "starcrossed_lastPlayDate": 0,
-      "wordle_guesses.2": 14
-    },
-    {
-      "id": "eef1",
-      "username": "test",
-      "hashed_password": "test",
-      "email": "test",
-      "salt": "",
-      "wordle_lastPlayDate": "1721058435441",
-      "wordle_plays": 2,
-      "wordle_wins": 2,
-      "wordle_guesses": {
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0
-      },
-      "constellations_lastPlayDate": 0,
-      "constellations_plays": 0,
-      "constellations_wins": 0,
-      "constellations_misses": {
-        "1": 0,
-        "2": 0,
-        "3": 0
-      },
-      "starcrossed_lastPlayDate": 0,
-      "wordle_guesses.2": 1,
-      "wordle_guesses.3": 1
+      "starcrossed_lastPlaySpeed": 0
     }
   ]
 }
