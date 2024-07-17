@@ -30,19 +30,30 @@ const SignUpScreen = () => {
                     username,
                     hashed_password: hashedPassword, 
                     email,
-                    statTransfer: false,
                     wordle_lastPlayDate: 0,
                     wordle_lastPlayGuesses: 0,
                     wordle_lastPlayWin: false,
                     wordle_plays: 0,
                     wordle_wins: 0,
                     wordle_guesses: { "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0},
+                    statTransfer: false,
                     constellations_lastPlayDate: 0,
                     constellations_plays: 0,
                     constellations_wins: 0,
                     constellations_misses: { "1": 0, "2": 0, "3": 0},
-                    starcrossed_lastPlayDate: 0,
-                    starcrossed_lastPlaySpeed: 0
+                    crossword_lastPlayDate: 0,
+                    crossword_lastPlaySpeed: 0,
+                    spellpetal_lastPlayDate: 0,
+                    spellpetal_wordsFoundToday: 0,
+                    spellpetal_ranks: {
+                      "Genius": 0,
+                      "Amazing": 0,
+                      "Great": 0,
+                      "Nice": 0,
+                      "Solid": 0,
+                      "Good": 0,
+                      "Beginner": 0
+                    }
                 }),
             });
 

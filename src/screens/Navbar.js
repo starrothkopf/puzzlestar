@@ -8,16 +8,15 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
             <nav className="navbar">
-            <h1>PUZZLESTAR</h1>
-            {currentUser && <span>@{currentUser["username"]}</span>}
+            <Link to="/"><h1>PEOPLESPUZZLE</h1></Link>
             <div className="links">
             {currentUser ? (
                 <>
-                    <Link to="/">Home</Link>
-                    <Link to="/wordle">Stardle</Link>
+                    <Link to="/wordle">Idle</Link>
+                    <Link to="/spellpetal">Spell Petal</Link>
                     <Link to="/constellations">Constellations</Link>
-                    <Link to="/starcrossed">Star-Crossed</Link>
-                    <Link to="/account">Account</Link>
+                    <Link to="/starcrossed">Mini Crossword</Link>
+                    <Link to="/pixelcanvas">Board</Link>
                 </>
             ) : (
                 <>

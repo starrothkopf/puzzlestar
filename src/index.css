@@ -33,19 +33,37 @@ body {
 .navbar h1 {
   font-weight: 500;
 }
-.navbar > span {
-  color: #333;
-  font-size: 1.5em;
-}
 .navbar .links {
   margin-left: auto;
 }
 .navbar a {
-  margin-left: 16px;
+  margin: 0px 8px;
   text-decoration: none;
-  padding: 6px;
+  padding-right: 6px;
 }
 .navbar a:hover {
+  text-decoration: underline;
+}
+.bottom-navbar {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2vh 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #333;
+  background-color: #fff;
+}
+.bottom-navbar a {
+  margin: 0px 15px;
+  text-decoration: none;
+  padding-right: 6px;
+  font-size: 13px;
+}
+.bottom-navbar a:hover {
   text-decoration: underline;
 }
 
@@ -268,9 +286,10 @@ body {
 
 /* wordle */
 .wordle-container {
+  height: 80vh;
   display: flex;
   margin: 0px 20px;
-  gap: 20px;
+  gap: 15px;
 }
 .left-wordle-container {
   flex: 1;
@@ -291,12 +310,12 @@ body {
 }
 .row > div {
   display: block;
-  width: 13.37vh;
-  height: 13.37vh;
+  width: 12.5vh;
+  height: 12.5vh;
   border: 1px solid #333;
   margin: 2px;
   text-align: center;
-  line-height: 13.37vh;
+  line-height: 12.5vh;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 9vh;
@@ -462,7 +481,7 @@ body {
   position: fixed;
   z-index: 1000;
   top: 22vh;
-  left: 21.4vh;
+  left: 19.4vh;
   width: auto;
   background: #fff;
   padding: 20px 30px;

@@ -9,6 +9,11 @@ import AccountScreen from './screens/AccountScreen';
 import { AuthProvider } from './hooks/AuthContext';
 import StarCrossedScreen from './screens/StarCrossedScreen';
 import ConstellationsScreen from './screens/ConstellationsScreen';
+import PixelCanvasScreen from './screens/PixelCanvasScreen';
+import SpellPetalScreen from './screens/SpellPetalScreen';
+import BottomNavbar from './screens/BottomNavbar';
+import TOSScreen from './screens/TOSScreen';
+import PrivacyScreen from './screens/PrivacyScreen';
 
 // json-server ./data/db.json --port 3001
 
@@ -27,19 +32,24 @@ function App() {
         <AuthProvider>
             <Router>
                 <div className="App">
-                <Navbar currentUser={currentUser}/>
+                    <Navbar currentUser={currentUser}/>
                     <div className="content">
                         <Routes> 
                         <Route path="/" element={<HomeScreen />} />
                         <Route path="/wordle" element={<WordleScreen />} />
+                        <Route path="/spellpetal" element={<SpellPetalScreen />} />
                         <Route path="/starcrossed" element={<StarCrossedScreen />} />
                         <Route path="/constellations" element={<ConstellationsScreen />} />
+                        <Route path="/pixelcanvas" element={<PixelCanvasScreen />} />
                         <Route path="/account" element={<AccountScreen />} />
+                        <Route path="/tos" element={<TOSScreen />} />
+                        <Route path="/privacy" element={<PrivacyScreen />} />
                         <Route path="/login" element={<LoginScreen/>} />
                         <Route path="/signup" element={<SignUpScreen />} />
                         <Route path="*" element={<Navigate to="/login" replace />} />
                         </Routes>
                     </div>
+                    <BottomNavbar currentUser={currentUser}/>
                 </div>
 		    </Router>
         </AuthProvider>
