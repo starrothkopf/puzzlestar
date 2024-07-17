@@ -3,10 +3,10 @@ const ConstellationsScreen = () => {
 
 	return (
 		<div className="coming-soon">
+			<img src={star} alt="Star" style={{ width: 'auto', height: '180px', opacity: '0.85', margin: '30px'}}/>
 			<p>
-				Coming Soon: Group words
+				Coming Soon: Constellations
 			</p>
-			<img src={star} alt="Star" style={{ width: 'auto', height: '80px', opacity: '0.85', margin: '30px'}}/>
 		</div>
 	);
 }

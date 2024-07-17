@@ -8,7 +8,7 @@ const PixelCanvasScreen = () => {
 			</div>
 			<div className="intro">
 				<div className="stat-line">
-					<p>Board?</p>
+					<p>Bored? Board. Today's prompt: </p>
 					<p>Double-click to clear the canvas</p>
 				</div>
 			</div>

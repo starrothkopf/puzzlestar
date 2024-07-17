@@ -30,6 +30,7 @@ const SignUpScreen = () => {
                     username,
                     hashed_password: hashedPassword, 
                     email,
+                    showOnLeaderboard: false,
                     wordle_lastPlayDate: 0,
                     wordle_lastPlayGuesses: 0,
                     wordle_lastPlayWin: false,

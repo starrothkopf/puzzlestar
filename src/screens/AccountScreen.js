@@ -2,6 +2,9 @@ import mac from '../assets/karemac.png';
 import { useNavigate } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../hooks/AuthContext';
+import usePatch from '../hooks/usePatch';
+
+var bcrypt = require('bcryptjs');
 
 const AccountScreen = () => {
 	const navigate = useNavigate();
@@ -15,6 +18,8 @@ const AccountScreen = () => {
     const [newEmail, setNewEmail] = useState(currentUser?.email || '');
     const [newPassword, setNewPassword] = useState('');
 
+	const { patchData } = usePatch();
+
 	const handleLogoutAndNavigate = () => {
         handleLogout();
         navigate('/login');
@@ -25,64 +30,21 @@ const AccountScreen = () => {
         navigate('/login');
     };
 
-	const handleUpdateUsername = () => {
+	const handleUpdateUsername = async () => {
 		const updatedUsername = newUsername.trim();
-        fetch(`http://localhost:3001/users/${currentUser["id"]}`, {
-			method: 'PATCH',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-        	body: JSON.stringify({ username: updatedUsername }),
-		})
-		.then(response => {
-			if (response.ok) {
-				updateCurrentUser({ ...currentUser, username: updatedUsername });
-				setEditingUsername(false);
-			} else {
-				console.error('Failed to update username');
-			}
-		})
-		.catch(error => console.error('Error updating username:', error));
+		await patchData('username', updatedUsername);
 	};
 
-    const handleUpdateEmail = () => {
+    const handleUpdateEmail = async () => {
 		const updatedEmail = newEmail.trim();
-        fetch(`http://localhost:3001/users/${currentUser["id"]}`, {
-			method: 'PATCH',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-        	body: JSON.stringify({ email: updatedEmail }),
-		})
-		.then(response => {
-			if (response.ok) {
-				updateCurrentUser({ ...currentUser, email: updatedEmail });
-				setEditingEmail(false);
-			} else {
-				console.error('Failed to update email');
-			}
-		})
-		.catch(error => console.error('Error updating email:', error));
+		await patchData('email', updatedEmail);
 	};
 
-    const handleUpdatePassword = () => {
+    const handleUpdatePassword = async () => {
 		const updatedPassword = newPassword.trim();
-        fetch(`http://localhost:3001/users/${currentUser["id"]}`, {
-			method: 'PATCH',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-        	body: JSON.stringify({ hashed_password: updatedPassword }),
-		})
-		.then(response => {
-			if (response.ok) {
-				updateCurrentUser({ ...currentUser, hashed_password: updatedPassword });
-				setEditingPassword(false);
-			} else {
-				console.error('Failed to update password');
-			}
-		})
-		.catch(error => console.error('Error updating password:', error));
+		const salt = await bcrypt.genSalt(10);
+        const hashedUpdatedPassword = await bcrypt.hash(updatedPassword, salt);
+		await patchData('hashed_password', hashedUpdatedPassword);
 	};
 
 	if (!currentUser) {

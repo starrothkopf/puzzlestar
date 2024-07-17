@@ -14,6 +14,7 @@ import SpellPetalScreen from './screens/SpellPetalScreen';
 import BottomNavbar from './screens/BottomNavbar';
 import TOSScreen from './screens/TOSScreen';
 import PrivacyScreen from './screens/PrivacyScreen';
+import LeaderBoardScreen from './screens/Leaderboard';
 
 // json-server ./data/db.json --port 3001
 
@@ -36,11 +37,12 @@ function App() {
                     <div className="content">
                         <Routes> 
                         <Route path="/" element={<HomeScreen />} />
-                        <Route path="/wordle" element={<WordleScreen />} />
+                        <Route path="/idle" element={<WordleScreen />} />
                         <Route path="/spellpetal" element={<SpellPetalScreen />} />
-                        <Route path="/starcrossed" element={<StarCrossedScreen />} />
+                        <Route path="/crossword" element={<StarCrossedScreen />} />
                         <Route path="/constellations" element={<ConstellationsScreen />} />
                         <Route path="/pixelcanvas" element={<PixelCanvasScreen />} />
+                        <Route path="/leaderboard" element={<LeaderBoardScreen />} />
                         <Route path="/account" element={<AccountScreen />} />
                         <Route path="/tos" element={<TOSScreen />} />
                         <Route path="/privacy" element={<PrivacyScreen />} />
