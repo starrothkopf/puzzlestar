@@ -12,7 +12,6 @@ import ConstellationsScreen from './screens/ConstellationsScreen';
 import PixelCanvasScreen from './screens/PixelCanvasScreen';
 import SpellPetalScreen from './screens/SpellPetalScreen';
 import BottomNavbar from './screens/BottomNavbar';
-import TOSScreen from './screens/TOSScreen';
 import PrivacyScreen from './screens/PrivacyScreen';
 import LeaderBoardScreen from './screens/Leaderboard';
 
@@ -44,7 +43,6 @@ function App() {
                         <Route path="/pixelcanvas" element={<PixelCanvasScreen />} />
                         <Route path="/leaderboard" element={<LeaderBoardScreen />} />
                         <Route path="/account" element={<AccountScreen />} />
-                        <Route path="/tos" element={<TOSScreen />} />
                         <Route path="/privacy" element={<PrivacyScreen />} />
                         <Route path="/login" element={<LoginScreen/>} />
                         <Route path="/signup" element={<SignUpScreen />} />
