@@ -8,7 +8,7 @@ var bcrypt = require('bcryptjs');
 
 const AccountScreen = () => {
 	const navigate = useNavigate();
-	const { currentUser, handleLogout, updateCurrentUser, handleDelete } = useContext(AuthContext);
+	const { currentUser, handleLogout, handleDelete } = useContext(AuthContext);
 
 	const [editingUsername, setEditingUsername] = useState(false);
     const [editingEmail, setEditingEmail] = useState(false);

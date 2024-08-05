@@ -14,7 +14,6 @@ const BottomNavbar = () => {
                         <Link to="/">About</Link>
                         <Link to="/privacy">Privacy</Link>
                         <Link to="/account">My Account</Link>
-                        <Link to="/leaderboard">Leaderboard</Link>
                     </>
                 ) : (
                     <>

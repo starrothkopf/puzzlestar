@@ -62,9 +62,8 @@ body {
   background-color: #57a972;
 }
 .link-spellpetal {
-  border: 1px solid #f04343;
+  border: 1px solid #333;
   background-color: #f04343;
-  color: #FFF;
 }
 .link-constellations {
   border: 1px solid #333;
@@ -205,7 +204,7 @@ body {
   text-align: justify;
 }
 .finished {
-  flex: 0.9;
+  flex: 0.4;
   border: 1px solid #333;
   border-radius: 20px;
   padding: 10px 15px;
@@ -635,6 +634,68 @@ body {
 .modal > div {
   font-size: 43px;
 }
+
+.spellpetal-container {
+  height: 80vh;
+  display: flex;
+  margin: 0px 20px;
+  gap: 15px;
+}
+.left-spellpetal-container {
+  flex: 1;
+  height: 100%;
+}
+.poppy-container {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vh; /* Adjust size as needed */
+  height: 60vh; /* Adjust size as needed */
+}
+.petal {
+  width: 20vh; 
+  height: 20vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #333;
+  background: #f04343;
+  color: #333;
+  line-height: 20vh;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 9vh;
+}
+.center-letter {
+  width: 20vh;
+  height: 20vh;
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 20vh;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 9vh;
+}
+.shuffle {
+  margin-top: 20vh;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-color: white;
+  color: #333;
+  outline: none;
+  border: 1px solid #333;
+}
+.right-spellpetal-container {
+  display: flex;
+  flex: 2;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 
 /* crosswords */
 .text {

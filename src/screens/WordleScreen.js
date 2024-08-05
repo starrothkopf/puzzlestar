@@ -8,7 +8,7 @@ function WordleScreen() {
     const now = Date.now();
     const epochDate = Math.floor(now / (24 * 60 * 60 * 1000));
 
-    fetch('http://localhost:3001/solutions') // FOR CPANEL: https://star.publish.library.wustl.edu/fetchSolutions.php
+    fetch('http://localhost:3001/wordle-solutions') // FOR CPANEL: https://star.publish.library.wustl.edu/fetchSolutions.php
       .then(res => res.json())
       .then(json => {
         // FOR CPANEL: const solutions = json.solutions;

@@ -1,5 +1,5 @@
 {
-  "solutions": [
+  "wordle-solutions": [
     {
       "word": "react",
       "id": "1"
@@ -15,6 +15,18 @@
     {
       "word": "stars",
       "id": "4"
+    }
+  ],
+  "spellpetal-solutions": [
+    {
+      "letters": "camlty",
+      "center": "i",
+      "id": "1"
+    },
+    {
+      "letters": "newspr",
+      "center": "a",
+      "id": "2"
     }
   ],
   "letters": [
@@ -129,14 +141,14 @@
       "username": "stark0pf",
       "hashed_password": "$2a$10$5ZowktMxXQ1hjnnUfL6wp.d4U5.5CfsFB4Nl.kLWEshF07g2GLViS",
       "email": "rothkopfstar@gmail.com",
-      "wordle_lastPlayDate": "1721882906560",
+      "wordle_lastPlayDate": "1722841620403",
       "wordle_lastPlayGuesses": 2,
       "wordle_lastPlayWin": true,
-      "wordle_plays": 183,
-      "wordle_wins": 179,
+      "wordle_plays": 184,
+      "wordle_wins": 180,
       "wordle_guesses": {
         "1": 0,
-        "2": 18,
+        "2": 19,
         "3": 48,
         "4": 69,
         "5": 33,
@@ -154,15 +166,36 @@
       "crossword_lastPlayDate": 0,
       "crossword_lastPlaySpeed": 0,
       "spellpetal_lastPlayDate": 0,
-      "spellpetal_wordsFoundToday": 0,
+      "spellpetal_wordsFoundToday": [
+        "italy",
+        "calamity",
+        "mali",
+        "claim",
+        "mail",
+        "acyclic",
+        "titty",
+        "lactic",
+        "lati",
+        "lila",
+        "titmall",
+        "yati",
+        "city",
+        "immit",
+        "limit",
+        "climactic",
+        "climactically"
+      ],
       "spellpetal_ranks": {
         "Genius": 0,
         "Amazing": 0,
         "Great": 0,
         "Nice": 0,
         "Solid": 0,
-        "Good": 0,
-        "Beginner": 0
+        "Good": 8,
+        "Beginner": 3,
+        "Good start": 2,
+        "Moving up": 12,
+        "Flowerful": 15
       }
     },
     {

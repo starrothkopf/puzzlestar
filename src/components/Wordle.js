@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback, useRef, useContext } from 'rea
 import useWordle from '../hooks/useWordle'
 import Grid from './Grid';
 import Keypad from './Keypad';
-import Modal from './Modal';
+import Modal from './WordleModal';
 import WordleStats from './WordleStats';
 import { AuthContext } from '../hooks/AuthContext';
 import usePatch from '../hooks/usePatch';
@@ -78,15 +78,15 @@ const Wordle = ({solution}) => {
   }, [currentUser, handleKeyup, isCorrect, turn, patchData]);
 
   useEffect(() => {
-  if (!playedToday && !gameEndedRef.current) {
-    if (isCorrect || turn > 5) {
-      handleGameEnd(Date.now().toString());
-    } else {
-      window.addEventListener('keyup', handleKeyup);
-      return () => window.removeEventListener('keyup', handleKeyup);
+    if (!playedToday && !gameEndedRef.current) {
+      if (isCorrect || turn > 5) {
+        handleGameEnd(Date.now().toString());
+      } else {
+        window.addEventListener('keyup', handleKeyup);
+        return () => window.removeEventListener('keyup', handleKeyup);
+      }
     }
-  }
-}, [currentUser, handleKeyup, isCorrect, turn, patchData, playedToday, handleGameEnd]);
+  }, [currentUser, handleKeyup, isCorrect, turn, patchData, playedToday, handleGameEnd]);
 
   return (
     <div>

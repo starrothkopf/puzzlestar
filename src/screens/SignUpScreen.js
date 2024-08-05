@@ -45,15 +45,18 @@ const SignUpScreen = () => {
                     crossword_lastPlayDate: 0,
                     crossword_lastPlaySpeed: 0,
                     spellpetal_lastPlayDate: 0,
-                    spellpetal_wordsFoundToday: 0,
+                    spellpetal_wordsFoundToday: {},
                     spellpetal_ranks: {
-                      "Genius": 0,
-                      "Amazing": 0,
-                      "Great": 0,
-                      "Nice": 0,
-                      "Solid": 0,
-                      "Good": 0,
-                      "Beginner": 0
+                        "Beginner": 0, 
+                        "Good start": 0,
+                        "Moving up": 0,
+                        "Good": 0,
+                        "Solid": 0,
+                        "Nice":0,
+                        "Great":0,
+                        "Amazing":0,
+                        "Genius": 0,
+                        "Flowerful": 0,
                     }
                 }),
             });
