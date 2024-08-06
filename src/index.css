@@ -645,8 +645,27 @@ body {
   flex: 1;
   height: 100%;
 }
+.currentGuess {
+  margin-top: 5vh;
+  height: 35px;
+  font-size: 9vh;
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+.error {
+  position: fixed;
+  z-index: 1000;
+  top: 12.5vh;
+  left: 21.5vh;
+  width: auto;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  animation: fadeIn 0.05s ease-out;
+}
 .poppy-container {
-  margin-top: 100px;
+  margin-top: 13vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -667,6 +686,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 9vh;
+  transition: all 0.3s ease;
 }
 .center-letter {
   width: 20vh;
@@ -680,7 +700,7 @@ body {
   font-size: 9vh;
 }
 .shuffle {
-  margin-top: 20vh;
+  margin-top: 19vh;
   padding: 10px 20px;
   border-radius: 40px;
   background-color: white;
@@ -694,6 +714,48 @@ body {
   width: 100%;
   justify-content: space-between;
   flex-direction: column;
+  text-align: left;
+}
+.words-found {
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.section-2-spellpetal {
+  display: flex;
+  flex-direction: column;
+}
+.section-2-spellpetal h5{
+  font-weight: 500;
+  font-size: 3em;
+}
+.rank-section {
+  display: flex;
+  gap: 10px;
+}
+.rank-section p{
+  color: #fff;
+  background-color: #333;
+  border-radius: 40px;
+  font-size: 1.5em;
+  padding: 5px 20px;
+}
+.rankbar {
+  flex: 8;
+  border-radius: 40px;
+  border: 1px solid #333;
+  background-color: #333;
+}
+.stat-section {
+  display: flex;
+  gap: 10px;
+}
+.word-frequencies {
+  flex: 1;
+}
+.distribution {
+  flex: 2;
 }
 
 

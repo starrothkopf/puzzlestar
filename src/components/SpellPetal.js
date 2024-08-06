@@ -3,7 +3,9 @@ import { AuthContext } from '../hooks/AuthContext';
 import usePatch from '../hooks/usePatch';
 import useSpellPetal from '../hooks/useSpellPetal';
 import Poppy from './Poppy';
+import RankProgressBar from './RankProgressBar';
 import SpellPetalModal from './SpellPetalModal';
+import SpellPetalStats from './SpellPetalStats';
 
 const SpellPetal = ({letters, center}) => {
     const {score, maxScore, error, currentGuess, validGuesses, rank, hasWon, handleKeyup} = useSpellPetal(letters, center);
@@ -38,6 +40,10 @@ const SpellPetal = ({letters, center}) => {
             if (timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0) {
                 setPlayedToday(false);
                 gameEndedRef.current = false;
+                if (validGuesses.length > 0) {
+                    await patchData('spellpetal_lastPlayDate', (Date.now() - 86400000).toString());
+                }
+                await patchData('spellpetal_wordsFoundToday', []);
             }
         }, 1000);
         return () => clearInterval(timer);
@@ -92,9 +98,15 @@ const SpellPetal = ({letters, center}) => {
                     </div>
                 </div>
                 <div className="right-spellpetal-container">
-                    <p>Words found: {currentUser.spellpetal_wordsFoundToday.map(word => word.toUpperCase()).join(', ')}</p>
-                    <p>Score: {score}</p>
-                    <p>{rank}</p>
+                    <div className="section-2-spellpetal">
+                        <RankProgressBar rank={rank} score={score} maxScore={maxScore} />
+                        <div className="words-found">
+                            <p>{currentUser.spellpetal_wordsFoundToday.map(word => word.toUpperCase()).join(' ')}</p>
+                        </div>
+                    </div>
+                    <div className="stats">
+                        <SpellPetalStats id={currentUser.id}/>
+                    </div>
                 </div>
             </div>
         </div>
