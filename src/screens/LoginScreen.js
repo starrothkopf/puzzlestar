@@ -44,7 +44,7 @@ const LoginScreen = () => {
 
     return (
         <div className="login-container">
-            <img src={star} alt="Star" style={{ width: 'auto', height: '80px', opacity: '0.85'}}/>
+            <img src={star} alt="Star" style={{ width: 'auto', height: '100px', opacity: '0.85'}}/>
             <h1>Open sesame</h1>
             <form id="loginform">
                 <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />

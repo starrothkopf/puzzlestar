@@ -11,13 +11,12 @@ const BottomNavbar = () => {
                 <div className="bottom-links">
                 {currentUser ? (
                     <>
-                        <Link to="/">About</Link>
                         <Link to="/privacy">Privacy</Link>
                         <Link to="/account">My Account</Link>
+                        <Link to="/leaderboard">Leaderboard</Link>
                     </>
                 ) : (
                     <>
-                        <Link to="/">About</Link>
                         <Link to="/privacy">Privacy</Link>
                     </>
                 )}

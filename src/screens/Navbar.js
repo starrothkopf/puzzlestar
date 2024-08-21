@@ -8,14 +8,14 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
             <nav className="navbar">
-                <Link to="/"><h1>THEPEOPLESPUZZLE</h1></Link>
+                <Link to="/"><h1>PUZZLESTAR</h1></Link>
                 <div className="links">
                 {currentUser ? (
                     <>
-                        <Link to="/idle" className="link-idle">Idle</Link>
-                        <Link to="/spellpetal" className="link-spellpetal">Spell Petal</Link>
-                        <Link to="/constellations" className="link-constellations">Constellations</Link>
-                        <Link to="/crossword" className="link-starcrossed">Crosswords</Link>
+                        <Link to="/idle" className="link-idle">Stardle</Link>
+                        <Link to="/spellpetal" className="link-spellpetal">Stellar Speller</Link>
+                        <Link to="/crossword" className="link-starcrossed">Star Crossed</Link>
+                        <Link to="/pixelcanvas" className="link-pixelcanvas">Board</Link>
                     </>
                 ) : (
                     <>

@@ -80,7 +80,7 @@ const SignUpScreen = () => {
     return (
         <div className="signup-container">
             <div className="top-panel">
-                <h1>Hi</h1>
+                <h1>Get Puzzled</h1>
                 <form id="signup-form">
                     <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
                     <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />

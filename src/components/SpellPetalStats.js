@@ -81,40 +81,16 @@ export default function SpellPetalStats({ id }) {
             <div className="stattitle">
                 <h2>Statistics</h2>
             </div>
-            <div className="stat-line">
-                <p>Number of games played:</p>
-                <p>{getPlayed()}</p>
-            </div>
-            <div className="stat-line">
-                <p>Average rank:</p>
-                <p>{getAverage()}</p>
-            </div>
-            <br/>
+
             <div className="stat-section">
                 <div className="word-frequencies">
                     <div className="stat-line">
-                        <p>Your word</p>
-                        <p>% of users found</p>
+                        <p>Number of games played:</p>
+                        <p>{getPlayed()}</p>
                     </div>
                     <div className="stat-line">
-                        <p>ITALICALLY</p>
-                        <p>3%</p>
-                    </div>
-                    <div className="stat-line">
-                        <p>ACYCLICALLY</p>
-                        <p>5%</p>
-                    </div>
-                    <div className="stat-line">
-                        <p>IMMIT</p>
-                        <p>6%</p>
-                    </div>
-                    <div className="stat-line">
-                        <p>TACTICALLY</p>
-                        <p>11%</p>
-                    </div>
-                    <div className="stat-line">
-                        <p>LACTIC</p>
-                        <p>15%</p>
+                        <p>Average rank:</p>
+                        <p>{getAverage()}</p>
                     </div>
                 </div>
                 <div className="distribution">
